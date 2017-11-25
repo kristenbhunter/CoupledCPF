@@ -75,7 +75,7 @@ NumericMatrix one_step_lorenz_vector(NumericMatrix xparticles, double tstart, do
     double x7 = xparticles(6, i);
     double x8 = xparticles(7, i);
     
-    state_type x = { x1, x2, x3, x4, x5, x6, x7, x8 }; // initial conditions
+    state_type x = {{ x1, x2, x3, x4, x5, x6, x7, x8 }}; // initial conditions
     vector<state_type> x_vec;
     vector<double> times;
     lorenz_ lorenz_instance(F);

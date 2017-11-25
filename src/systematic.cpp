@@ -6,7 +6,7 @@ using namespace std;
 // [[Rcpp::export]]
 IntegerVector systematic_resampling_n_(const NumericVector & weights, int ndraws, double u){
   RNGScope scope;
-  int nparticles = weights.size();
+  // int nparticles = weights.size();
   IntegerVector ancestors(ndraws);
   u = u / ndraws;
   int j = 0;

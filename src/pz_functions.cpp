@@ -67,7 +67,7 @@ NumericMatrix one_step_pz_vector(NumericMatrix xparticles, NumericVector alphas,
   for (int i = 0; i < xparticles.cols(); i++){
     double P = xparticles(0, i);
     double Z = xparticles(1, i);
-    state_type x = { P , Z }; // initial conditions
+    state_type x = {{ P , Z }}; // initial conditions
     vector<state_type> x_vec;
     vector<double> times;
     pz_ pz_instance(alphas(i), c, e, ml, mq);

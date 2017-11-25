@@ -73,7 +73,8 @@ void Tree::prune(IntegerVector o){
     o_star(l_star(i)) = o(i);
   }
   //
-  int j, new_j;
+  // int j, new_j;
+  int j;
   for (int i = 0; i < N; i ++){
     j = l_star(i);
     while (j >= 0 && o_star(j) == 0){
